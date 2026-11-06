@@ -180,7 +180,7 @@ def chart_card(title: str, subtitle: str, fig) -> None:
         theme.chart_header(title, subtitle)
         st.plotly_chart(
             fig,
-            width="stretch",
+            use_container_width=True,
             theme=None,
             config={"displayModeBar": False, "responsive": True},
         )
